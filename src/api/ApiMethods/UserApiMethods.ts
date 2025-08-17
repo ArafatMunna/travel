@@ -1,4 +1,4 @@
-import {API_BASE_URL} from 'config'
+import {API_BASE_URL, API_KEY} from 'config'
 import type {LoginProps, RegisterProps} from 'api/Request'
 import type {LoginResponse, RegisterResponse} from 'api/Response'
 import useAuthToken from 'hooks/persisted/useAuthToken'
@@ -27,6 +27,7 @@ const UserApiMethods = new ApiMethods({
   timeout: 2000,
   commonHeaders: {
     Authorization: useAuthToken.getState().authToken,
+    'x-api-key': API_KEY
   },
 })
 
