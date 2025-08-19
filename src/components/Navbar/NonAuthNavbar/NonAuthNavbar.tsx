@@ -1,5 +1,5 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, useLocation} from 'react-router-dom'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
@@ -14,14 +14,20 @@ import useAuthToken from 'hooks/persisted/useAuthToken'
 import {RightElement} from './NonAuthNavbar.styles'
 
 const NonAuthNavbar = () => {
-  const {authToken, removeAuthToken} = useAuthToken()
+  const location = useLocation()
   const navigation = useNavigate()
+  const {authToken, removeAuthToken} = useAuthToken()
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null)
 
   const handleClose = (callback?: () => void) => {
     setAnchorElUser(null)
     if (callback) callback()
   }
+
+  const isActive = React.useCallback(
+    (pathname?: string) => location.pathname === pathname,
+    [location.pathname],
+  )
 
   return (
     <AppBar position='fixed' sx={{boxShadow: 'none', background: '#5fcfcf'}}>
@@ -50,7 +56,11 @@ const NonAuthNavbar = () => {
             component='a'
             variant='subtitle2'
             color='#FFFFFF'
-            sx={{cursor: 'pointer'}}
+            sx={{
+              cursor: 'pointer',
+              fontWeight: isActive(routes.home.to) ? 600 : 400,
+              color: isActive(routes.home.to) ? '#ffb74d' : 'inherit',
+            }}
             onClick={() => navigation(routes.home.to)}
             mr={1}
           >
@@ -61,7 +71,11 @@ const NonAuthNavbar = () => {
             component='a'
             variant='subtitle2'
             color='#FFFFFF'
-            sx={{cursor: 'pointer'}}
+            sx={{
+              cursor: 'pointer',
+              fontWeight: isActive(routes.about.to) ? 600 : 400,
+              color: isActive(routes.about.to) ? '#ffb74d' : 'inherit',
+            }}
             onClick={() => navigation(routes.about.to)}
             mr={1}
           >
