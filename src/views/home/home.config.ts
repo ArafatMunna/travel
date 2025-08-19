@@ -55,7 +55,7 @@ export const travelConfig = [
     to: 'coxsbazar',
     description:
       'The world’s longest natural sea beach, located in Coxs Bazar, offering stunning views and vibrant local culture.Leave your guidebooks at home and dive into the local cultures that make each destination so special. We’ll connect you with our exclusive experiences. Each trip is carefully crafted to let enjoy your vacation. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/HIk-b7_-OuQ?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/YPxfs_hYOnw?rel=0',
     isAvailable: true,
   },
   {
@@ -66,7 +66,7 @@ export const travelConfig = [
     to: 'sylhet',
     description:
       'A freshwater swamp forest located in Sylhet, perfect for nature lovers and adventurers. Leave your guidebooks at home and dive into the local cultures that make each destination so special. We’ll connect you with our exclusive experiences. Each trip is carefully crafted to let enjoy your vacation. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/1BGQFJpNbj8?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/5iYxvoioExc?rel=0',
     isAvailable: true,
   },
   {
@@ -77,7 +77,7 @@ export const travelConfig = [
     to: 'khulna',
     description:
       'The largest mangrove forest in the world, home to the Royal Bengal Tiger and a UNESCO World Heritage site. Leave your guidebooks at home and dive into the local cultures that make each destination so special. We’ll connect you with our exclusive experiences. Each trip is carefully crafted to let enjoy your vacation. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/O_2aJOUEvso?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/wgLs7DiiT_U?rel=0',
     isAvailable: true,
   },
   {
@@ -99,7 +99,7 @@ export const travelConfig = [
     to: 'barishal',
     description:
       'Known as the "Daughter of the Sea," Kuakata is a unique beach destination where you can witness both sunrise and sunset over the Bay of Bengal. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/_Nd2i4OpbdU?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/nqk2vXFt-BM?rel=0',
     isAvailable: true,
   },
   {
@@ -110,7 +110,7 @@ export const travelConfig = [
     to: 'rajshahi',
     description:
       'One of the oldest archaeological sites in Bangladesh, offering a glimpse into the country’s ancient history. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/BNTi34hhboU?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/nmU4J50C-LQ?rel=0',
     isAvailable: true,
   },
   {
@@ -121,7 +121,7 @@ export const travelConfig = [
     to: 'sylhet',
     description:
       'A major national park located in Sylhet, known for its rich biodiversity and beautiful hiking trails. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/__7mSXYQEwM?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/682gOXzB9Ms?rel=0',
     isAvailable: true,
   },
   {
@@ -132,7 +132,7 @@ export const travelConfig = [
     to: 'mymensingh',
     description:
       'A beautiful eco park in the Mymensingh region, ideal for eco-tourism and bird watching. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.',
-    videoUrl: 'https://www.youtube.com/embed/sI43xLYkys4?rel=0',
+    videoUrl: 'https://www.youtube.com/embed/WHouTbXrmEE?rel=0',
     isAvailable: true,
   },
 ]
