@@ -1,4 +1,11 @@
-import CardImage from 'images/packageimage.png'
+import CoxBazar from 'images/coxBazar.jpeg'
+import Ratargul from 'images/ratargul.jpeg'
+import Sundarban from 'images/sundarban.jpg'
+import Sajek from 'images/sajek.jpg'
+import Kuakata from 'images/kuakata.jpg'
+import Mahasthangarh from 'images/mahasthangarh.jpg'
+import Lawachara from 'images/lawachara.jpg'
+import Madhutila from 'images/madhutila.jpg'
 
 export const searchConfig = [
   {
@@ -43,7 +50,7 @@ export const travelConfig = [
   {
     id: 1,
     name: 'Sea Beach, Coxs Bazar',
-    image: CardImage,
+    image: CoxBazar,
     from: 'dhaka',
     to: 'coxsbazar',
     description:
@@ -54,7 +61,7 @@ export const travelConfig = [
   {
     id: 2,
     name: 'Ratargul Swamp Forest, Sylhet',
-    image: CardImage,
+    image: Ratargul,
     from: 'dhaka',
     to: 'sylhet',
     description:
@@ -65,7 +72,7 @@ export const travelConfig = [
   {
     id: 3,
     name: 'Sundarbans, Khulna',
-    image: CardImage,
+    image: Sundarban,
     from: 'dhaka',
     to: 'khulna',
     description:
@@ -76,7 +83,7 @@ export const travelConfig = [
   {
     id: 4,
     name: 'Sajek Valley, Rangamati',
-    image: CardImage,
+    image: Sajek,
     from: 'dhaka',
     to: 'rangamati',
     description:
@@ -87,7 +94,7 @@ export const travelConfig = [
   {
     id: 5,
     name: 'Kuakata, Barishal',
-    image: CardImage,
+    image: Kuakata,
     from: 'dhaka',
     to: 'barishal',
     description:
@@ -98,7 +105,7 @@ export const travelConfig = [
   {
     id: 6,
     name: 'Mahasthangarh, Bogura',
-    image: CardImage,
+    image: Mahasthangarh,
     from: 'dhaka',
     to: 'rajshahi',
     description:
@@ -109,7 +116,7 @@ export const travelConfig = [
   {
     id: 7,
     name: 'Lawachara National Park, Moulvibazar',
-    image: CardImage,
+    image: Lawachara,
     from: 'dhaka',
     to: 'sylhet',
     description:
@@ -120,7 +127,7 @@ export const travelConfig = [
   {
     id: 8,
     name: 'Madhutila Eco Park, Sherpur',
-    image: CardImage,
+    image: Madhutila,
     from: 'dhaka',
     to: 'mymensingh',
     description:

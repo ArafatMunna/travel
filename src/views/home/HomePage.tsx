@@ -3,6 +3,7 @@ import * as yup from 'yup'
 import {useNavigate} from 'react-router-dom'
 import {Box, Typography} from '@mui/material'
 import {UseFormReturn} from 'react-hook-form'
+import * as motion from 'motion/react-client'
 
 import Card from '@core/Card'
 import routes from 'routes'
@@ -78,47 +79,43 @@ const HomePage = () => {
       <Box mb={6}>
         <Grid>
           {data.map(item => (
-            <Card isCard key={item.id}>
-              <Box p={2}>
-                <Box
-                  sx={{cursor: 'pointer'}}
-                  onClick={() => {
-                    setPackage(item)
-                    setIsopen(true)
-                  }}
-                >
-                  <img src={item.image} height={150} width={'100%'} />
-                  <Typography variant='h6' mt={1}>
-                    {item.name}
-                  </Typography>
-                </Box>
+            <motion.div whileHover={{scale: 1.02}}>
+              <Card isCard key={item.id}>
+                <Box p={2}>
+                  <Box>
+                    <img src={item.image} height={150} width={'100%'} />
+                    <Typography variant='h6' mt={1}>
+                      {item.name}
+                    </Typography>
+                  </Box>
 
-                <Box display='flex' justifyContent='space-between'>
-                  <Button
-                    variant='contained'
-                    color='success'
-                    size='small'
-                    sx={{mt: 2, color: '#FFFFFF'}}
-                    onClick={() => {
-                      setPackage(item)
-                      setIsopen(true)
-                    }}
-                  >
-                    Book now
-                  </Button>
+                  <Box display='flex' justifyContent='space-between'>
+                    <Button
+                      variant='contained'
+                      color='success'
+                      size='small'
+                      sx={{mt: 2, color: '#FFFFFF'}}
+                      onClick={() => {
+                        setPackage(item)
+                        setIsopen(true)
+                      }}
+                    >
+                      Book now
+                    </Button>
 
-                  <Button
-                    variant='contained'
-                    color='secondary'
-                    size='small'
-                    sx={{mt: 2, color: '#FFFFFF'}}
-                    onClick={() => navigation(routes.details.to + item.id)}
-                  >
-                    View details
-                  </Button>
+                    <Button
+                      variant='contained'
+                      color='secondary'
+                      size='small'
+                      sx={{mt: 2, color: '#FFFFFF'}}
+                      onClick={() => navigation(routes.details.to + item.id)}
+                    >
+                      View details
+                    </Button>
+                  </Box>
                 </Box>
-              </Box>
-            </Card>
+              </Card>
+            </motion.div>
           ))}
         </Grid>
 
