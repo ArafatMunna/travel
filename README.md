@@ -23,11 +23,15 @@ This project is a React application built with Vite, using TypeScript and Node.j
 
 In the project directory, you can run:
 
-### `yarn install`
+```bash 
+yarn install
+```
 
 Install all dependencies
 
-### `yarn run dev`
+```bash 
+yarn run dev
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
@@ -35,7 +39,9 @@ Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `yarn build`
+```bash 
+yarn build
+```
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -51,6 +57,12 @@ Open [https://travify-app.netlify.app/](https://travify-app.netlify.app/) to vie
 
 ### Credentials
 
-- **Email**: eve.holt@reqres.in
-- **Password**: 1234568
+- **Email**: 
+```bash 
+eve.holt@reqres.in 
+```
+- **Password**: 
+```bash 
+12345678
+```
 
