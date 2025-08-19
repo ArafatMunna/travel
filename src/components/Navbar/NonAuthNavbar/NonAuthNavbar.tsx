@@ -18,6 +18,11 @@ const NonAuthNavbar = () => {
   const navigation = useNavigate()
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null)
 
+  const handleClose = (callback?: () => void) => {
+    setAnchorElUser(null)
+    if (callback) callback()
+  }
+
   return (
     <AppBar position='fixed' sx={{boxShadow: 'none', background: '#5fcfcf'}}>
       <Toolbar sx={{display: 'flex', justifyContent: 'space-between'}}>
@@ -30,8 +35,28 @@ const NonAuthNavbar = () => {
           onClick={() => navigation(routes.home.to)}
         >
           <img src={NmsLogo} height={20} width={30} />
+          <Typography
+            variant='h4'
+            ml={2}
+            sx={{
+              display: {xs: 'none', sm: 'block'}, // hide on xs, show on sm and up
+            }}
+          >
+            Travify
+          </Typography>
         </IconButton>
         <RightElement>
+          <Typography
+            component='a'
+            variant='subtitle2'
+            color='#FFFFFF'
+            sx={{cursor: 'pointer'}}
+            onClick={() => navigation(routes.home.to)}
+            mr={1}
+          >
+            Home
+          </Typography>
+
           <Typography
             component='a'
             variant='subtitle2'
@@ -66,16 +91,19 @@ const NonAuthNavbar = () => {
             >
               {authToken ? (
                 <>
-                  <MenuItem sx={{minWidth: 180}} onClick={removeAuthToken}>
+                  <MenuItem sx={{minWidth: 180}} onClick={() => handleClose(removeAuthToken)}>
                     <Typography textAlign='center'>Logout</Typography>
                   </MenuItem>
                 </>
               ) : (
                 <>
-                  <MenuItem sx={{minWidth: 180}} onClick={() => navigation(routes.login.to)}>
+                  <MenuItem
+                    sx={{minWidth: 180}}
+                    onClick={() => handleClose(() => navigation(routes.login.to))}
+                  >
                     <Typography textAlign='center'>Login</Typography>
                   </MenuItem>
-                  <MenuItem onClick={() => navigation(routes.register.to)}>
+                  <MenuItem onClick={() => handleClose(() => navigation(routes.register.to))}>
                     <Typography textAlign='center'>Register</Typography>
                   </MenuItem>
                 </>

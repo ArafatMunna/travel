@@ -11,7 +11,7 @@ const aboutInfo = [
     id: 1,
     title: 'Who We Are',
     content:
-      'Founded in 2015, Zoftify is a 30-person travel software development agency specializing exclusively in the travel sector. We offer expert advice, guidance, and build innovative travel technology solutions to our clients.',
+      'Founded in 2015, Travify is a 30-person travel software development agency specializing exclusively in the travel sector. We offer expert advice, guidance, and build innovative travel technology solutions to our clients.',
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const AboutPage = () => (
   <Box>
     <Box sx={{textAlign: 'center'}}>
       <Typography variant='h1' mt={3}>
-        About Zoftify
+        About Travify
       </Typography>
       <Typography variant='h5' mt={2}>
         we are a design and development partner for travel and hospitality companies, well-versed in
@@ -67,10 +67,10 @@ const AboutPage = () => (
         Founder & CEO
       </Typography>
       <Typography variant='h1' mt={1}>
-        Jhon Doe
+        Jordan Blake
       </Typography>
       <Typography variant='h5' mt={2}>
-        Alex loves travel and tech and founded Zoftify to help travel companies use technology more
+        Alex loves travel and tech and founded Travify to help travel companies use technology more
         effectively. Before this, he worked in tech consulting, where he led international mobile
         development teams.
       </Typography>

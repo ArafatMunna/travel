@@ -29,7 +29,7 @@ const useAuthToken = create<State & Action>()(
       },
     }),
     {
-      name: 'nms-app-auth-token',
+      name: 'travel-app-auth-token',
       partialize: ({authToken}) => ({authToken}),
     },
   ),
