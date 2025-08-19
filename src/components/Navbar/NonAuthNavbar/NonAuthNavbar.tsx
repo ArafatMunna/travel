@@ -112,12 +112,18 @@ const NonAuthNavbar = () => {
               ) : (
                 <>
                   <MenuItem
-                    sx={{minWidth: 180}}
+                    sx={{
+                      minWidth: 180,
+                    }}
+                    selected={isActive(routes.login.to)}
                     onClick={() => handleClose(() => navigation(routes.login.to))}
                   >
                     <Typography textAlign='center'>Login</Typography>
                   </MenuItem>
-                  <MenuItem onClick={() => handleClose(() => navigation(routes.register.to))}>
+                  <MenuItem
+                    onClick={() => handleClose(() => navigation(routes.register.to))}
+                    selected={isActive(routes.register.to)}
+                  >
                     <Typography textAlign='center'>Register</Typography>
                   </MenuItem>
                 </>
