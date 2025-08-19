@@ -78,7 +78,7 @@ const HomePage = () => {
       <Box mb={6}>
         <Grid>
           {data.map(item => (
-            <Card isCard>
+            <Card isCard key={item.id}>
               <Box p={2}>
                 <Box
                   sx={{cursor: 'pointer'}}
