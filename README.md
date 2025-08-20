@@ -6,7 +6,7 @@ This project is a React application built with Vite, using TypeScript and Node.j
 
 ### Prerequisites
 
-- **Node.js**: Version 20 or higher
+- **Node.js**: Version 22
 - **Yarn**: Version 1.22 or higher
 
 ### Installation
